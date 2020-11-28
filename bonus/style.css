@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General */
+.fl{
+  float: left;
+}
+.pos-rel{
+  position: relative;
+}
+.pos-abs{
+  position: absolute;
+}
+/* /General */
+body{
+  background-color: #222;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin: auto;
+}
+.container{
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.photo-container,
+.arrow-container{
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.photo-container{
+  width: 80%;
+  text-align: center;
+}
+.arrow-container{
+  width: 10%;
+}
+a.previous{
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+a.forward{
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+img{
+  display: none;
+  height: 500px;
+  max-width: 100%;
+}
+img.view{
+  display: inline-block;
+}
+.selector{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
+  width: 20%;
+  height: 60px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 40px;
+}
+.pin{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(100,100,255,1);
+}
+.active{
+  background-color: purple;
+}
