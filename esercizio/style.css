@@ -85,3 +85,6 @@ img.view{
   border-radius: 50%;
   background-color: rgba(100,100,255,1);
 }
+.active{
+  background-color: purple;
+}

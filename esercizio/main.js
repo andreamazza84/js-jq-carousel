@@ -46,3 +46,39 @@
       }
     }
   });
+
+  //**************************************************//
+  // BONUS
+  i = 0;
+  var pin = [];
+  do {
+    pin[i] = $('.pin:nth-child('+(i+1)+')');
+    i++
+  } while ($('.pin:nth-child('+i+')').hasClass('last') === false);
+  //console.log(pin);
+
+  //Quando clicco su un "pin" la funzione deve indicarmi qual è nell'ordine.
+  $('.pin').click(function(){
+    //console.log(this);
+    for (var i = 0; i < pin.length; i++) {
+      if (this === pin[i]['0']) {
+        //Recupera l'ultima immagine con classe "view" per poterla rimuovere e assegnarla a quella corrispondente al pin.
+        for (var j = 0; j < img.length; j++) {
+          if (img[j].hasClass('view')) {
+            img[j].removeClass('view');
+            img[i].addClass('view');
+            break
+          }
+        }
+        break
+      }
+    }
+  });
+
+
+
+    //  console.log(this); //mi mostra l'elemento che viene cliccato in console
+
+
+      //$(this).children('p').toggle(); //il figlio dell'elemento che ho appena cliccato,
+      //$(this).find('p').toggle();
