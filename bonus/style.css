@@ -82,7 +82,8 @@ img.view{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgba(100,100,255,1);
+  background-color: rgba(100,100,255);
+  cursor: pointer;
 }
 .active{
   background-color: purple;

@@ -25,9 +25,9 @@ a{
 }
 .container{
   width: 80%;
-  height: 100%;
-  min-height: 100vh;
+  height: 500px;
   margin: auto;
+  margin-top: 50px;
   text-align: center;
 }
 .container:after{
@@ -37,15 +37,13 @@ a{
 }
 .photo-container,
 .arrow-container{
-  height: 80%;
-  min-height: 80vh;
+  height: 100%;
   margin: auto;
-  margin-top: 5%;
   text-align: center;
 }
 .photo-container{
   width: 80%;
-  min-height: 60vh;
+  text-align: center;
 }
 .arrow-container{
   width: 10%;
@@ -62,18 +60,19 @@ a.forward{
 }
 img{
   display: none;
-  width: 90%;
+  height: 500px;
+  max-width: 100%;
 }
 img.view{
   display: inline-block;
 }
 .selector{
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 25%;
+  bottom: 10%;
   width: 20%;
   height: 60px;
   background: rgba(0,0,0,0.8);
