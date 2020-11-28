@@ -13,12 +13,6 @@
 .pos-abs{
   position: absolute;
 }
-.view{
-  display: inline;
-}
-.no-view{
-  display: none;
-}
 /* /General */
 body{
   background-color: #222;
@@ -67,7 +61,11 @@ a.forward{
   left: 20px;
 }
 img{
+  display: none;
   width: 90%;
+}
+img.view{
+  display: inline-block;
 }
 .selector{
   display: flex;
@@ -75,7 +73,7 @@ img{
   align-items: center;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 20%;
+  bottom: 25%;
   width: 20%;
   height: 60px;
   background: rgba(0,0,0,0.8);
