@@ -26,23 +26,23 @@
       }
     }
   });
-/*
+
+  //Al click della freccia "previous" sposto la classe "view" all'immagine precedente
   $('a.previous').click(function(){
     console.log("previous");
     for (var i = 0; i < img.length; i++) {
-      //Se l'immagine che ha classe "view" cooincide con l'immagine che ha classe "last", resetto il contatore e assegno nuovamente la classe "view"
-      if(img[i].hasClass('view') && img[i].hasClass('last')){
+      //Se l'immagine che ha classe "view" cooincide con l'immagine che ha classe "last", imposto il contatore in ultima posizione e assegno nuovamente la classe "view"
+      if(img[i].hasClass('view') && img[i].hasClass('first')){
         img[i].removeClass('view');
-        i = 0;
+        i = img.length - 1;
         img[i].addClass('view');
         break
       }
-      //In alternativa, sposto la classe "view" all'immagine successiva.
+      //In alternativa, sposto la classe "view" all'immagine precedente.
       else if (img[i].hasClass('view')) {
         img[i].removeClass('view');
-        img[(i+1)].addClass('view');
+        img[(i-1)].addClass('view');
         break
       }
     }
   });
-*/
